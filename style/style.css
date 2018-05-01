@@ -121,7 +121,7 @@ h1 {
 	line-height: 18px;
 	padding: 11px 31px 6px 69px;	
 	width: 240px;
-	background-image: url(../img/photoCam.png);
+	background-image: url(../img/cam_icon.png);
 	background-repeat: no-repeat;
 	background-position: 13px 10px;
 	margin-right: 21px;
@@ -159,11 +159,73 @@ h1 {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.nav_btn {
+.bot_line div div div a {
 	display: inline-block;
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 22px;
 	letter-spacing: 1.2px;
+	padding: 26px 30px 21px 50px;
+	border-right: 1px solid #3b3b3b;
+}
+
+.nav_btn1 {
+	border-left: 1px solid #3b3b3b;
+	background-image: url(../img/home_icon.png);
+	background-repeat: no-repeat;
+	background-position: 18px 24px;
+}
+
+.nav_btn1:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #050505;
+	border: none;
+}
+
+.bot_line div div div {
+	display: flex;
+}
+
+.nav_btn1{
+	order: -1;
+}
+
+.nav_btn2{
+	order: -1;
+}
+
+.nav_btn3{
+	order: -1;
+}
+
+.nav_btn4{
+	order: -1;
+}
+
+.nav_btn5{
+	order: -1;
+}
+
+.nav_btn6{
+	order: -1;
+}
+
+.nav_btn2:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #050505;
+	border: none;
+}
+
+.nav_btn2:hover ~ .nav_btn1 {
+	color: #fff;
+	text-decoration: none;
+	background-color: #050505;
+	border: none;
+}
+
+.nav_btn6 {
+	border: none;
 }
