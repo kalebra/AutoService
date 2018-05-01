@@ -8,6 +8,7 @@ header {
 	background-image: url(../img/top-bg.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+	position: relative;
 }
 
 .top_line {
@@ -106,13 +107,38 @@ h1 {
     padding-left: 5px;
 }
 
-.button {
-	font-size: 20px;
-	color: #fff;
-	font-weight: bold;
+.button_photo, .button_price {
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
-	line-height: 17.39px;
-
-	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
 	background-color: #d12f22;
+	display: inline-block;
+	border-bottom: 4px solid #ac160a;
 }
+
+.button_photo {
+	line-height: 18px;
+	padding: 11px 31px 6px 69px;	
+	width: 240px;
+	background-image: url(../img/photoCam.png);
+	background-repeat: no-repeat;
+	background-position: 13px 10px;
+	margin-right: 21px;
+}
+
+.button_price {
+	line-height: 17.39px;
+	padding: 22px 30px 14px 25px;
+}
+
+.button_price:hover, .button_photo:hover {
+	color: #fff;
+}
+
+.top_buttons {
+	position: absolute;
+	width: 100%;
+	bottom: 33px;
+}
+
