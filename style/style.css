@@ -151,6 +151,8 @@ h1 {
 	background-color: rgb(255, 255, 255, .18);
 }
 
+/* navigation bar */
+
 .bot_line {
 	height: 69px;
 	max-width: 1680px;
@@ -159,73 +161,65 @@ h1 {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.bot_line div div div a {
-	display: inline-block;
-	color: #fff;
+.nav_bar {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav_bar li a {
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 22px;
+	color: #fff;
 	letter-spacing: 1.2px;
-	padding: 26px 30px 21px 50px;
-	border-right: 1px solid #3b3b3b;
 }
 
-.nav_btn1 {
+.nav_bar li {
+	display: block;
+	padding: 26px 27px 21px 50px;
 	border-left: 1px solid #3b3b3b;
-	background-image: url(../img/home_icon.png);
 	background-repeat: no-repeat;
+}
+
+.nav_bar li:hover {
+	background-color: #000;
+}
+
+.nav_bar li:hover, .nav_bar li:hover + li {
+	border-left: 1px solid #000;
+}
+
+.nav_bar li:nth-child(1) {
+	background-image: url(../img/home_icon.png);
 	background-position: 18px 24px;
 }
 
-.nav_btn1:hover {
-	color: #fff;
-	text-decoration: none;
-	background-color: #050505;
-	border: none;
+.nav_bar li:nth-child(2) {
+	background-image: url(../img/about_icon.png);
+	background-position: 17px 26px;
+	padding-left: 47px;
 }
 
-.bot_line div div div {
-	display: flex;
+.nav_bar li:nth-child(3) {
+	background-image: url(../img/prices_icon.png);
+	background-position: 27px 27px;
+	padding-left: 51px;
 }
 
-.nav_btn1{
-	order: -1;
+.nav_bar li:nth-child(4) {
+	background-image: url(../img/jobs_icon.png);
+	background-position: 18px 26px;
+	padding-left: 51px;
 }
 
-.nav_btn2{
-	order: -1;
+.nav_bar li:nth-child(5) {
+	background-image: url(../img/partners_icon.png);
+	background-position: 22px 28px;
+	padding-left: 54px;
 }
 
-.nav_btn3{
-	order: -1;
-}
-
-.nav_btn4{
-	order: -1;
-}
-
-.nav_btn5{
-	order: -1;
-}
-
-.nav_btn6{
-	order: -1;
-}
-
-.nav_btn2:hover {
-	color: #fff;
-	text-decoration: none;
-	background-color: #050505;
-	border: none;
-}
-
-.nav_btn2:hover ~ .nav_btn1 {
-	color: #fff;
-	text-decoration: none;
-	background-color: #050505;
-	border: none;
-}
-
-.nav_btn6 {
-	border: none;
+.nav_bar li:nth-child(6) {
+	background-image: url(../img/contacts_icon.png);
+	background-position: 22px 23px;
+	padding-left: 48px;
 }
