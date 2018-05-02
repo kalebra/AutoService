@@ -1,9 +1,29 @@
 @font-face {
 	font-family: 'Bebas Neue Regular';
-	src: url('../fonts/BebasRegular.eot');
-	src: url('../fonts/BebasRegular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/BebasRegular.woff') format('woff'),
-		 url('../fonts/BebasRegular.ttf') format('truetype');
+	src: url('../fonts/BebasRegular/BebasRegular.eot');
+	src: url('../fonts/BebasRegular/BebasRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BebasRegular/BebasRegular.woff') format('woff'),
+		 url('../fonts/BebasRegular/BebasRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('../fonts/BebasBold/BebasBold.eot');
+	src: url('../fonts/BebasBold/BebasBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BebasBold/BebasBold.woff') format('woff'),
+		 url('../fonts/BebasBold/BebasBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot');
+	src: url('../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff') format('woff'),
+		 url('../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }

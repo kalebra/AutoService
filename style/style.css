@@ -161,7 +161,12 @@ h1 {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.nav_bar {
+.nav_flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav_bar{
 	display: flex;
 	flex-direction: row;
 }
@@ -183,6 +188,11 @@ h1 {
 
 .nav_bar li:hover {
 	background-color: #000;
+	cursor: pointer;
+}
+
+.nav_bar li a:hover {
+	text-decoration: none;
 }
 
 .nav_bar li:hover, .nav_bar li:hover + li {
@@ -222,4 +232,54 @@ h1 {
 	background-image: url(../img/contacts_icon.png);
 	background-position: 22px 23px;
 	padding-left: 48px;
+}
+
+/* warranty */
+
+.warranty {
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+	border: 3px solid #ffffff;
+	border-radius: 3px;
+	margin: 12px 0 0 40px;
+	width: 175px;
+    height: 47px;
+    cursor: default;
+}
+
+.w_left {
+	font-family: "Bebas Neue Bold";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20.32px;	
+	padding: 13px 0px 10px 5px;
+}
+
+.num_year {
+	font-size: 33px;
+	
+}
+
+.year {
+	padding-left: 5px;
+}
+
+.w_right {
+	font-family: "Roboto Condensed";
+	font-size: 15px;
+	line-height: 16.93px;
+	text-transform: uppercase;
+	padding: 5px 0 0 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* services */
+.services {
+	/* Style for "Прямоуголь" */
+	
+	height: 590px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	background-color: #000000;
 }
