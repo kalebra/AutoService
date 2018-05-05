@@ -277,9 +277,44 @@ h1 {
 
 /* services */
 .services {
-	/* Style for "Прямоуголь" */
-	
 	height: 590px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	background-color: #000000;
+	padding: 73px 0 0 0;
+	position: relative;
+}
+
+.services h2 {
+	color: #c9c9c9;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.services h2 span {
+	color: #ffffff;
+}
+
+.services h2 span strong {
+	color: #d12f22;
+}
+
+.services h2::before {
+	content: "";
+	background-image: url(../img/side-line-l.png);
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	margin: 5px 0 0 -75px;
+}
+
+.services h2::after {
+	content: "";
+	background-image: url(../img/side-line-r.png);
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	margin: 5px 0 0 23px;
 }
