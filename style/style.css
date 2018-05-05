@@ -318,3 +318,55 @@ h1 {
 	position: absolute;
 	margin: 5px 0 0 23px;
 }
+
+/* список кнопок */
+.serv_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 68px;
+}
+
+.serv_list li {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 162px;
+	height: 167px;
+	background-color: #191919;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	margin-right: 28px;
+	color: #fefefe;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.serv_list li:last-child {
+	margin-right: 0;
+}
+
+.serv_list li:first-child {
+	background-image: url(../img/car_icon.png);
+	background-repeat: no-repeat;
+	background-position: 36px 26px;
+
+}
+
+.serv_list li span:first-child {
+	
+}
+
+.serv_list li span:last-child {
+	margin: 0 auto;
+	width: 160px;
+	height: 25px;
+	background-color: #212121;
+	color: #d12f22;
+	font-family: "Bender Light";
+	font-size: 22px;
+	line-height: 26px;
+	writing-mode: vertical-lr;
+	padding: 8px 0 0 70px;
+}
