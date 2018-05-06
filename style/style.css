@@ -249,7 +249,7 @@ h1 {
 }
 
 .w_left {
-	font-family: "Bebas Neue Bold";
+	font-family: "Bebas Neue Regular";
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 20.32px;	
@@ -279,9 +279,13 @@ h1 {
 .services {
 	height: 590px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	background-color: #000000;
+	background-color: #1a1a1a;
 	padding: 73px 0 0 0;
 	position: relative;
+}
+
+.services .container {
+	padding-right: 0;
 }
 
 .services .container .row .col:first-child {
@@ -292,7 +296,7 @@ h1 {
 	color: #c9c9c9;
 	font-size: 40px;
 	font-weight: bold;
-	line-height: 26px;
+	line-height: 32px;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: 'Bebas Neue Regular';
@@ -343,25 +347,58 @@ h1 {
 	border: 1px solid rgba(255, 255, 255, 0.12);
 	margin-right: 28px;
 	color: #fefefe;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 20px;
+	font-weight: 400;
 	line-height: 26px;
 	text-transform: uppercase;
+	letter-spacing: 0.027em;
+	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .serv_list li:last-child {
 	margin-right: 0;
 }
 
-.serv_list li:first-child {
+.serv_list li:nth-child(1) {
 	background-image: url(../img/car_icon.png);
-	background-repeat: no-repeat;
 	background-position: 36px 26px;
+}
 
+.serv_list li:nth-child(2) {
+	background-image: url(../img/saw_icon.png);
+	background-position: 45px 19px;
+	font-size: 18px;
+}
+
+.serv_list li:nth-child(3) {
+	background-image: url(../img/expr_icon.png);
+	background-position: 31px 43px;
+}
+
+.serv_list li:nth-child(4) {
+	background-image: url(../img/diagn_icon.png);
+	background-position: 49px 31px;
+}
+
+.serv_list li:nth-child(5) {
+	background-image: url(../img/wrench_icon.png);
+	background-position: 50px 31px;
+}
+
+.serv_list li:nth-child(6) {
+	background-image: url(../img/plastic_icon.png);
+	background-position: 43px 36px;
 }
 
 .serv_list li span:first-child {
-	
+	padding-bottom: 7px;
+    text-align: center;	
+    margin-left: 5px;
+}
+
+.serv_list li span:first-child:hover {
+	text-decoration: underline;
 }
 
 .serv_list li span:last-child {
@@ -375,4 +412,44 @@ h1 {
 	line-height: 26px;
 	writing-mode: vertical-lr;
 	padding: 8px 0 0 70px;
+	font-weight: 300;
+}
+
+.serv_list .active {
+	background-color: #2a2a2a;
+}
+
+.serv_list .active span:last-child {
+	background-color: #353535;
+	color: #fff;
+}
+
+/* список ссылок */
+.serv_links {
+	height: 94px;
+	background-color: #353535;
+	margin: 22px 15px 0 15px;
+    padding-top: 15px;
+}
+
+.serv_links ul {
+}
+
+.serv_links li {
+	text-align: center;
+	padding-left: 16px;
+}
+
+.serv_links a {
+	padding-right: 16px;
+	font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 32px;
+    color: #fefefe;
+    letter-spacing: 0.02em;
+}
+
+.serv_links a:hover {
+	text-decoration: none;
 }

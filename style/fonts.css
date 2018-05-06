@@ -9,13 +9,13 @@
 }
 
 @font-face {
-	font-family: 'Bebas Neue Bold';
+	font-family: 'Bebas Neue Regular';
 	src: url('../fonts/BebasBold/BebasBold.eot');
 	src: url('../fonts/BebasBold/BebasBold.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/BebasBold/BebasBold.woff') format('woff'),
 		 url('../fonts/BebasBold/BebasBold.ttf') format('truetype');
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 @font-face {
