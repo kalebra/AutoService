@@ -284,6 +284,10 @@ h1 {
 	position: relative;
 }
 
+.services .container .row .col:first-child {
+	padding-left: 0px;
+}
+
 .services h2 {
 	color: #c9c9c9;
 	font-size: 40px;
@@ -291,6 +295,8 @@ h1 {
 	line-height: 26px;
 	text-transform: uppercase;
 	text-align: center;
+	font-family: 'Bebas Neue Regular';
+	letter-spacing: 1px;
 }
 
 .services h2 span {
