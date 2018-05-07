@@ -354,6 +354,16 @@ h1 {
 	letter-spacing: 0.027em;
 	background-repeat: no-repeat;
 	cursor: pointer;
+	position: relative;
+}
+
+.serv_list li:hover {
+	background-color: #2a2a2a;
+}
+
+.serv_list li:hover span:last-child {
+	background-color: #353535;
+	color: #fff;
 }
 
 .serv_list li:last-child {
@@ -419,12 +429,17 @@ h1 {
 	background-color: #2a2a2a;
 }
 
+.serv_list .active span:first-child {
+	text-decoration: underline;
+}
+
 .serv_list .active span:last-child {
 	background-color: #353535;
 	color: #fff;
 }
 
 /* список ссылок */
+
 .serv_links {
 	height: 94px;
 	background-color: #353535;
@@ -452,4 +467,37 @@ h1 {
 
 .serv_links a:hover {
 	text-decoration: none;
+}
+
+.serv_links li span {
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/rhombus.png);
+	position: absolute;
+	top: 13px;
+    left: 83px;
+}
+
+/* кнопка Оставить Заявку */
+
+.btn_request_wrap {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.btn_request {
+	width: 216px;
+    height: 54px;
+    background-color: #d12f22;
+    border-bottom: 4px solid #ac160a;
+    font-size: 20px;
+    line-height: 17.39px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+    text-align: center;
+    padding-top: 21px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
 }
