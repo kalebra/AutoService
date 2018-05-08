@@ -280,7 +280,7 @@ h1 {
 	height: 590px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	background-color: #1a1a1a;
-	padding: 73px 0 0 0;
+	padding: 71px 11px 0 0;
 	position: relative;
 }
 
@@ -481,7 +481,7 @@ h1 {
 /* кнопка Оставить Заявку */
 
 .btn_request_wrap {
-	padding-top: 40px;
+	padding-top: 39px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -500,4 +500,9 @@ h1 {
     padding-top: 21px;
     font-weight: bold;
     letter-spacing: 0.025em;
+    cursor: pointer;
+}
+
+.btn_request:hover {
+	text-decoration: underline;
 }
