@@ -2,6 +2,11 @@ body {
 	font-family: "Bebas Neue Regular";
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+	cursor: default;
+}
+
+
 header {
 	min-height: 668px;
 	background-image: url(../img/top-bg.png);
@@ -565,5 +570,45 @@ h1 {
 /* request */
 
 .request {
-	background-color: red;
+	color: #050505;	
+}
+
+.request h2 {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 26px;
+	margin-top: 52px;
+    padding-left: 8px;
+    letter-spacing: 0.02em;
+}
+
+.request a {
+    width: 176px;
+    height: 45px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 14.11px;
+    display: inline-block;
+    background-color: #d12f22;
+    margin-left: 16px;
+    border-bottom: 4px solid #ac160a;
+    margin-top: 35px;
+    margin-bottom: 37px;
+    padding-top: 17px;
+    padding-left: 26px;
+    letter-spacing: 0.024em;
+}
+
+.request p {
+	font-family: "Roboto Condensed";
+    font-weight: bold;
+    line-height: 22px;
+    padding: 0px 0 23px 11px;
+    letter-spacing: 0.0278em;
+}
+
+.request img {
+	margin: 18px 0 0 6px;
 }
