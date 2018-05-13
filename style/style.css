@@ -63,6 +63,12 @@ header {
 	top: 15px;	
 }
 
+.logo a {
+	display: block;
+    width: 164px;
+    height: 136px;
+}
+
 /* phone */
 
 .phone {
@@ -554,4 +560,10 @@ h1 {
     text-align: center;
     letter-spacing: 0.027em;
     padding-bottom: 20px;
+}
+
+/* request */
+
+.request {
+	background-color: red;
 }
