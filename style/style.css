@@ -33,7 +33,7 @@ header {
 /* top address */
 
 .top_addr {
-	height: 52px;
+	min-height: 52px;
 	background-image: url(../img/map_pointer.png);
 	background-repeat: no-repeat;
 	background-position: top left;
@@ -71,7 +71,7 @@ header {
 .logo a {
 	display: block;
     width: 164px;
-    height: 136px;
+    min-height: 136px;
 }
 
 /* phone */
@@ -165,7 +165,7 @@ h1 {
 /* navigation bar */
 
 .bot_line {
-	height: 69px;
+	min-height: 69px;
 	max-width: 1680px;
 	margin: 0 auto; 
 	background-color: rgba(0, 0, 0, .86);
@@ -288,7 +288,7 @@ h1 {
 
 /* services */
 .services {
-	height: 590px;
+	min-height: 590px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	background-color: #1a1a1a;
 	padding: 71px 11px 0 0;
@@ -326,7 +326,7 @@ h1 {
 	content: "";
 	background-image: url(../img/side-line-l.png);
 	width: 50px;
-	height: 20px;
+	min-height: 20px;
 	position: absolute;
 	margin: 5px 0 0 -75px;
 }
@@ -335,7 +335,7 @@ h1 {
 	content: "";
 	background-image: url(../img/side-line-r.png);
 	width: 50px;
-	height: 20px;
+	min-height: 20px;
 	position: absolute;
 	margin: 5px 0 0 23px;
 }
@@ -348,12 +348,12 @@ h1 {
 	margin-top: 68px;
 }
 
-.serv_list li {
+.serv_list > li {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 162px;
-	height: 167px;
+	min-height: 167px;
 	background-color: #191919;
 	border: 1px solid rgba(255, 255, 255, 0.12);
 	margin-right: 28px;
@@ -368,91 +368,23 @@ h1 {
 	position: relative;
 }
 
-.serv_list li:hover {
+.serv_list > li:hover {
 	background-color: #2a2a2a;
 }
 
-.serv_list li:hover span:last-child {
-	background-color: #353535;
-	color: #fff;
+.serv_list > li:hover .serv_links {
+	display: block;
 }
 
-.serv_list li:last-child {
-	margin-right: 0;
-}
-
-.serv_list li:nth-child(1) {
-	background-image: url(../img/car_icon.png);
-	background-position: 36px 26px;
-}
-
-.serv_list li:nth-child(2) {
-	background-image: url(../img/saw_icon.png);
-	background-position: 45px 19px;
-	font-size: 18px;
-}
-
-.serv_list li:nth-child(3) {
-	background-image: url(../img/expr_icon.png);
-	background-position: 31px 43px;
-}
-
-.serv_list li:nth-child(4) {
-	background-image: url(../img/diagn_icon.png);
-	background-position: 49px 31px;
-}
-
-.serv_list li:nth-child(5) {
-	background-image: url(../img/wrench_icon.png);
-	background-position: 50px 31px;
-}
-
-.serv_list li:nth-child(6) {
-	background-image: url(../img/plastic_icon.png);
-	background-position: 43px 36px;
-}
-
-.serv_list li span:first-child {
-	padding-bottom: 7px;
-    text-align: center;	
-    margin-left: 5px;
-}
-
-.serv_list li span:first-child:hover {
-	text-decoration: underline;
-}
-
-.serv_list li span:last-child {
-	margin: 0 auto;
-	width: 160px;
-	height: 25px;
-	background-color: #212121;
-	color: #d12f22;
-	font-family: "Bender Light";
-	font-size: 22px;
-	line-height: 26px;
-	writing-mode: vertical-lr;
-	padding: 8px 0 0 70px;
-	font-weight: 300;
-}
-
-.serv_list .active {
-	background-color: #2a2a2a;
-}
-
-.serv_list .active span:first-child {
-	text-decoration: underline;
-}
-
-.serv_list .active span:last-child {
-	background-color: #353535;
-	color: #fff;
-}
-
-/* список ссылок */
+/* список ссылок внутри кнопок */
 
 .serv_links {
-	height: 94px;
+	/* display: none; */
+	position: absolute;
+	width: 1115px;
+	top: 10px;
+	left: 10px;
+	min-height: 94px;
 	background-color: #353535;
 	margin: 22px 15px 0 15px;
     padding-top: 15px;
@@ -462,6 +394,7 @@ h1 {
 }
 
 .serv_links li {
+
 	text-align: center;
 	padding-left: 16px;
 }
@@ -488,6 +421,89 @@ h1 {
 	top: 13px;
     left: 83px;
 }
+
+/* продолжение списка кнопок */
+
+.serv_list > li:hover span:last-child {
+	background-color: #353535;
+	color: #fff;
+}
+
+.serv_list > li:last-child {
+	margin-right: 0;
+}
+
+.serv_list > li:nth-child(1) {
+	background-image: url(../img/car_icon.png);
+	background-position: 36px 26px;
+}
+
+.serv_list > li:nth-child(2) {
+	background-image: url(../img/saw_icon.png);
+	background-position: 45px 19px;
+	font-size: 18px;
+}
+
+.serv_list > li:nth-child(3) {
+	background-image: url(../img/expr_icon.png);
+	background-position: 31px 43px;
+}
+
+.serv_list > li:nth-child(4) {
+	background-image: url(../img/diagn_icon.png);
+	background-position: 49px 31px;
+}
+
+.serv_list > li:nth-child(5) {
+	background-image: url(../img/wrench_icon.png);
+	background-position: 50px 31px;
+}
+
+.serv_list > li:nth-child(6) {
+	background-image: url(../img/plastic_icon.png);
+	background-position: 43px 36px;
+}
+
+.serv_list > li span:first-child {
+	padding-bottom: 7px;
+    text-align: center;	
+    margin-left: 5px;
+}
+
+.serv_list > li span:first-child:hover {
+	text-decoration: underline;
+}
+
+.serv_list > li span:last-child {
+	margin: 0 auto;
+	width: 160px;
+	min-height: 25px;
+	background-color: #212121;
+	color: #d12f22;
+	font-family: "Bender Light";
+	font-size: 22px;
+	line-height: 26px;
+	writing-mode: vertical-lr;
+	padding: 8px 0 0 70px;
+	font-weight: 300;
+}
+
+.serv_list .active {
+	background-color: #2a2a2a;
+}
+
+.serv_list .active span:first-child {
+	text-decoration: underline;
+}
+
+.serv_list .active span:last-child {
+	background-color: #353535;
+	color: #fff;
+}
+
+/* список ссылок */
+
+
 
 /* кнопка Оставить Заявку */
 
