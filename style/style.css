@@ -373,21 +373,23 @@ h1 {
 }
 
 .serv_list > li:hover .serv_links {
-	display: block;
+	opacity: 1;
 }
 
 /* список ссылок внутри кнопок */
 
 .serv_links {
-	/* display: none; */
+	opacity: 0;
 	position: absolute;
 	width: 1115px;
-	top: 10px;
-	left: 10px;
+	top: 165px;
+    left: -15px;
 	min-height: 94px;
 	background-color: #353535;
 	margin: 22px 15px 0 15px;
     padding-top: 15px;
+    transition: opacity .5s ease;
+    
 }
 
 .serv_links ul {
@@ -418,13 +420,13 @@ h1 {
 	height: 22px;
 	background-image: url(../img/rhombus.png);
 	position: absolute;
-	top: 13px;
-    left: 83px;
+	top: -10px;
+    left: 70px;
 }
 
 /* продолжение списка кнопок */
 
-.serv_list > li:hover span:last-child {
+.serv_list > li:hover > span:last-child {
 	background-color: #353535;
 	color: #fff;
 }
@@ -464,17 +466,17 @@ h1 {
 	background-position: 43px 36px;
 }
 
-.serv_list > li span:first-child {
+.serv_list > li > span:first-child {
 	padding-bottom: 7px;
     text-align: center;	
     margin-left: 5px;
 }
 
-.serv_list > li span:first-child:hover {
+.serv_list > li > span:first-child:hover {
 	text-decoration: underline;
 }
 
-.serv_list > li span:last-child {
+.serv_list > li > span:nth-child(2) {
 	margin: 0 auto;
 	width: 160px;
 	min-height: 25px;
@@ -492,18 +494,14 @@ h1 {
 	background-color: #2a2a2a;
 }
 
-.serv_list .active span:first-child {
+.serv_list .active > span:first-child {
 	text-decoration: underline;
 }
 
-.serv_list .active span:last-child {
+.serv_list .active > span:nth-child(2) {
 	background-color: #353535;
 	color: #fff;
 }
-
-/* список ссылок */
-
-
 
 /* кнопка Оставить Заявку */
 
@@ -515,6 +513,7 @@ h1 {
 }
 
 .btn_request {
+	margin-top: 114px;
 	width: 216px;
     height: 54px;
     background-color: #d12f22;
