@@ -1,5 +1,6 @@
 body {
 	font-family: "Bebas Neue Regular";
+	background-color: #555;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -25,9 +26,12 @@ header {
 
 .top_piece {
 	min-height: 97px;
+	background: url(../img/top_piece.png) no-repeat top center;
+	/*
 	background-image: url(../img/top_piece.png);
 	background-position: top center;
 	background-repeat: no-repeat;
+	*/
 }
 
 /* top address */
@@ -288,7 +292,7 @@ h1 {
 
 /* services */
 .services {
-	min-height: 590px;
+	/* min-height: 590px; */
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	background-color: #1a1a1a;
 	padding: 71px 11px 0 0;
@@ -346,6 +350,12 @@ h1 {
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 68px;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .serv_list > li {
@@ -372,9 +382,11 @@ h1 {
 	background-color: #2a2a2a;
 }
 
+/*
 .serv_list > li:hover .serv_links {
 	opacity: 1;
 }
+*/
 
 /* список ссылок внутри кнопок */
 
@@ -399,7 +411,36 @@ h1 {
 	left: 261px;
 }
 
-.serv_links ul {
+.serv_list > li:nth-child(3) .serv_links {
+	left: -395px;
+}
+
+.serv_list > li:nth-child(3) .serv_links span {
+	left: 450px;
+}
+
+.serv_list > li:nth-child(4) .serv_links {
+	 left: -585px;
+ }
+
+.serv_list > li:nth-child(4) .serv_links span {
+	left: 640px;
+}
+
+.serv_list > li:nth-child(5) .serv_links {
+	left: -775px;
+}
+
+.serv_list > li:nth-child(5) .serv_links span {
+	left: 830px;
+}
+
+.serv_list > li:nth-child(6) .serv_links {
+	left: -965px;
+}
+
+.serv_list > li:nth-child(6) .serv_links span {
+	left: 1020px;
 }
 
 .serv_links li {
@@ -429,6 +470,10 @@ h1 {
 	position: absolute;
 	top: -10px;
     left: 70px;
+}
+
+.serv_list .active .serv_links {
+	opacity: 1;
 }
 
 /* продолжение списка кнопок */
@@ -490,7 +535,7 @@ h1 {
 	background-color: #212121;
 	color: #d12f22;
 	font-family: "Bender Light";
-	font-size: 22px;
+	font-size: 14px;
 	line-height: 26px;
 	writing-mode: vertical-lr;
 	padding: 8px 0 0 70px;
@@ -520,7 +565,7 @@ h1 {
 }
 
 .btn_request {
-	margin-top: 114px;
+	margin: 25px 0 57px 0;
 	width: 216px;
     height: 54px;
     background-color: #d12f22;
@@ -534,6 +579,7 @@ h1 {
     font-weight: bold;
     letter-spacing: 0.025em;
     cursor: pointer;
+	transition: all 0.8s ease;
 }
 
 .btn_request:hover {
@@ -613,7 +659,8 @@ h1 {
 /* request */
 
 .request {
-	color: #050505;	
+	color: #050505;
+	background-color: #fff;
 }
 
 .request h2 {
