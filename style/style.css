@@ -388,8 +388,15 @@ h1 {
 	background-color: #353535;
 	margin: 22px 15px 0 15px;
     padding-top: 15px;
-    transition: opacity .5s ease;
-    
+    transition: all 0.8s ease;
+}
+
+.serv_list > li:nth-child(2) .serv_links {
+	left: -205px;
+}
+
+.serv_list > li:nth-child(2) .serv_links span {
+	left: 261px;
 }
 
 .serv_links ul {
