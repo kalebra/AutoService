@@ -1,12 +1,15 @@
 body {
 	font-family: "Bebas Neue Regular";
-	background-color: #555;
+	background-color: #dde0de;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
 
+.main {
+	max-width: 1680px;
+}
 
 header {
 	min-height: 668px;
@@ -172,7 +175,7 @@ h1 {
 	min-height: 69px;
 	max-width: 1680px;
 	margin: 0 auto; 
-	background-color: rgba(0, 0, 0, .86);
+	background-color: #242424;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
