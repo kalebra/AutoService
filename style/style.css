@@ -23,7 +23,7 @@ header {
 	min-height: 97px;
 	max-width: 1680px;
 	background-color: rgba(0, 0, 0, .86);
-	margin: 0 auto;	
+	margin: 0 auto;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -53,7 +53,7 @@ header {
 	color: #d12f22;
 	font-size: 32px;
 	font-weight: bold;
-	
+
 	display: block;
 	text-transform: uppercase;
 }
@@ -72,7 +72,7 @@ header {
 
 .logo {
 	position: absolute;
-	top: 15px;	
+	top: 15px;
 }
 
 .logo a {
@@ -137,7 +137,7 @@ h1 {
 
 .button_photo {
 	line-height: 18px;
-	padding: 11px 31px 6px 69px;	
+	padding: 11px 31px 6px 69px;
 	width: 240px;
 	background-image: url(../img/cam_icon.png);
 	background-repeat: no-repeat;
@@ -174,7 +174,7 @@ h1 {
 .bot_line {
 	min-height: 69px;
 	max-width: 1680px;
-	margin: 0 auto; 
+	margin: 0 auto;
 	background-color: #242424;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -270,13 +270,13 @@ h1 {
 	font-family: "Bebas Neue Regular";
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 20.32px;	
+	line-height: 20.32px;
 	padding: 13px 0px 10px 5px;
 }
 
 .num_year {
 	font-size: 33px;
-	
+
 }
 
 .year {
@@ -523,7 +523,7 @@ h1 {
 
 .serv_list > li > span:first-child {
 	padding-bottom: 7px;
-    text-align: center;	
+    text-align: center;
     margin-left: 5px;
 }
 
@@ -594,7 +594,7 @@ h1 {
 .we_pros {
 	height: 1100px;
 	background-color: #eaeaea;
-	
+
 }
 
 .we_pros h2 {
@@ -638,6 +638,7 @@ h1 {
 }
 
 .advs {
+	/* test Atom */
 	background-color: #d7d7d7;
 	padding-bottom: 20px;
 }
